@@ -43,7 +43,7 @@ h3 {
 }
 
 #profile-pic {
-	background-color: #dce8dc;
+
 	margin-top: 15vh;
 	
 	float: left;
@@ -80,9 +80,8 @@ p {
 }
 
 #projects {
-	display: flex;
-	width: 100vw;
-	height: 100vh;
+	margin-left: 6vw;
+
 }
 
 .show-box {
@@ -90,9 +89,10 @@ p {
 	height: 300px;
 	width: 500px;
 	margin: 20px;
-	flex-direction: row;
+	display: inline-block;
+
 }
 
 div {
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 }
