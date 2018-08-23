@@ -45,7 +45,6 @@ h3 {
 #profile-pic {
 
 	margin-top: 15vh;
-	
 	float: left;
 	width: 45vw;
 	height: 70vh;
@@ -81,6 +80,7 @@ p {
 
 #projects {
 	margin-left: 6vw;
+	width: 100vw;
 
 }
 
