@@ -4,6 +4,8 @@
 	<title>Kelsey Green</title>
 	 <link rel="stylesheet" href="./css/style.css"> 
 	 <link href="https://fonts.googleapis.com/css?family=Raleway|Sawarabi+Mincho" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
 	<div id="profile-top">
@@ -22,11 +24,11 @@
 		<h3 id="tagline"> Web Development, Digital Humanities, Design</h3>	
 	
 		<div class="contact-info">
-			<h3> Here's where you can find me:</h3>
-			<p> I'm on github as <a href="#">kelseyhg</a></p>
-			<p> Email me: kelseyhgreen@gmail.com </p>
-			<p> Find me on linkedIn <a href="#">here</a> </p>
-			<p> Check out my resume <a href="#">here</a></p>
+			<p> </p>
+			<p><a href="https://github.com/kelseyhg" target="_blank"><img src="img/github-icon.svg" width="25"><br><span class="contact-link"> github </span></a></p>
+			<p><i class="material-icons">mail</i> <br>kelseyhgreen@gmail.com </p>
+			<p><a href="https://www.linkedin.com/in/kelseyhgreen/" target="_blank"><img src="img/linkedin-icon.svg" width="25"><br><span class="contact-link"> linkedin </span></a></p>
+			<p><a href="Kelsey-Green-resume.pdf" target="_blank"><i class="material-icons">assignment</i><br><span class="contact-link"> resume </span></a></p>
 		</div>
 	</div>
 	<div id="profile-center">	
@@ -49,26 +51,79 @@
 	</div>
 	<div id="projects">
 			<h2 id="projects-header"> Projects </h2>
-			<h3 id="project-1-title"> Break-In at the Museum!</h3>
-			<div class="project-1-pic">
-				<img class="project-pic" src="img/museum-game-1.png">
-				<img class="project-pic" src="img/museum-game-2.png">
-				<img class="project-pic" src="img/museum-game-3.png">
-			</div>
-			<p class="project-1-text"> This project is an educational game. Inspired by the British Museum as well as computer games I played as a child, I wanted to build a game that could connect a remote "visitor" to a museum. </p>
-			<h3 id="project-2-title"> Auctave Live-Auction Management </h3>
-			<div class="project-2-pic">
-				<img class="project-pic" src="#">
-				<img class="project-pic" src="#">
-				<img class="project-pic" src="#">
-			</div>
-			<p class="project-2-text"> This project was developed for the West Seattle Community Orchestras for their fundraising efforts. It is a full-stack app for managing live fundraising auctions from start to finish. </p>
-	</div>		
+		
+				<h3 id="project-1-title"> Break-In at the Museum! </h3><h3 class="p-links-1"><a href="http://kelseyhg.github.io/museum_game" target="_blank"><i class="material-icons">launch</i> </a> <a href="https://github.com/kelseyhg/museum_game" target="_blank"><img src="img/github-icon.svg" width="25"></a> </h3>
+				<div class="project-1-pic">
+					<img class="project-pic" src="img/museum-game-1.png">
+					<img class="project-pic" src="img/museum-game-2.png">
+					<img class="project-pic" src="img/museum-game-3.png">
+					<p class="tools">Tools: HTML/CSS | JavaScript | jQuery | jQueryUI | Bootstrap | Adobe Photoshop</p><br>
+				</div>
+				<br>
+				<details class="project-1-text">
+				<summary> More about Break-In!</summary><br><br>
+				 <p>As a part of my digital humanities program, I evaluated digital representations of museum displays and artifacts. Much like Benjamin writes in his seminal "Art in the Age of Mechanical Reproduction", artifacts and museum spaces lose the aura that makes them striking and special when digitally reproduced. It can be difficult to remain engaged with a museum collection that is not thoughtfully interpreted in digital space. </p>
+				<p>This little game, built with pure css and javascript, is one response to the question: how can we engage and educate remote "visitors" to a museum collection? </p>
+				<p>Each artifact in the game is based on a real item in the British Museum's collection and was illustrated for the game.</p>
+				<p>Players move through three different museum rooms to collect artifacts, artifact labels, and a note. Then, players reassemble a broken artifact and return the artifacts and their labels to their proper places in the display. Finally, they use what they've learned to uncover the final, missing artifact. </p>
+				</details>
+		
+			
+				<h3 id="project-2-title"> Auctave Live-Auction Management </h3><h3 class="p-links-2"><a href="https://auctave-app.herokuapp.com" target="_blank"><i class="material-icons">launch</i> </a> <a href="https://github.com/kelseyhg/auctive" target="_blank"><img src="img/github-icon.svg" width="25"></a> </h3>
+				<div class="project-2-pic">
+					<img class="project-pic" src="img/auctave-1.png" id="myImg">
+					<img class="project-pic" src="img/auctave-2.png" onclick="openModal();currentSlide(2)">
+					<img class="project-pic" src="img/auctave-3.png" onclick="openModal();currentSlide(3)">
+					<p class="tools">Tools:  HTML/CSS | JavaScript | Ajax | Express | NodeJS | Postgresql | Bootstrap | Google Sheets API</p><br>
+				</div>
+				<details class="project-2-text">
+				<summary> More about Auctave</summary><br><br>
+				 <p> For years, West Seattle Symphony Orchestras have been fundraising with a gala auction. It's an event that requires a lot of dedicated work from volunteers: soliciting donations from individuals and businesses, selling tickets, keeping track of sold items and other donations, and creating reports. Although there is software available to make this process easier, the Orchestras are run largely by volunteers on a shoestring budget and there has never been room in the budget.</p>
+				<p>Auctave was built to meet West Seattle Symphony Orchestras' specific needs. It's a simple, usable app that tracks donors, item donations, and event attendees. Data is stored in a SQL database, and after the event, reports can be written to a Google spreadsheet for easy analysis, email merges, and review.</p>
+				</details>
+  
+
+			
+				<h3 id="project-3-title"> Ginkgo Budgeting </h3><h3 class="p-links-3"><a href="https://my-ginkgo.herokuapp.com" target="_blank"><i class="material-icons">launch</i> </a> <a href="https://github.com/kelseyhg/project-three-client" target="_blank"><img src="img/github-icon.svg" width="25"></a> </h3>
+				<div class="project-3-pic">
+					<img class="project-pic" src="img/ginkgo-1.png">
+					<img class="project-pic" src="img/ginkgo-2.png">
+					<img class="project-pic" src="img/ginkgo-3.png">
+					<p class="tools"> HTML/CSS | JavaScript | React | MongoDB | Express | NodeJS | React-Vis | Moments</p><br>
+				</div>
+				<details class="project-3-text">
+				<summary> More about Ginkgo</summary><br><br>
+				 <p> Many people struggle to keep track of their spending and stick to a budget. Ginkgo was a group effort to design a site that makes money tracking simple and easy to visualize. Users can sign in, set up a monthly budget goal, and record expenditures of different categories. Cool graphs from React-Vis display donut charts for budget and total spending, and a bar chart to compare goals with actual spending.</p>
+		
+				</details>
+			
+
+			
+				<h3 id="project-4-title"> Who Gets the Internet? </h3><h3 class="p-links-4"><a href="https://broadband-speed.herokuapp.com" target="_blank"><i class="material-icons">launch</i> </a> <a href="https://github.com/kelseyhg/broadbandspeed" target="_blank"><img src="img/github-icon.svg" width="25"></a> </h3>
+				<div class="project-4-pic">
+					<img class="project-pic" src="img/broadband-1.png">
+					<img class="project-pic" src="img/broadband-2.png">
+					<img class="project-pic" src="img/broadband-3.png">
+					<p class="tools"> HTML/CSS | JavaScript | Postgresql | Python | Django | Leaflet Maps | geoJSON </p><br>
+				</div>
+				<details class="project-4-text">
+				<summary> More about... the Internet</summary><br><br>
+				 <p> As a web developer, I spend a lot of my time online. I don't think a lot about my ability to access the internet until my connection goes down. But for some parts of the US, internet access is inaccessible or too slow to access much of today's web content. Rural areas are especially hard-hit.</p>
+				<p>In the spirit of the Rural Electrification Administration, which in the 1930's produced a series of <a class="in-text" href="http://www.designishistory.com/1940/lester-beall/" target="_blank">iconic posters</a> illustrating the potential of electricity, I wanted to create a website that recreated the experience of lagging internet while informing about internet access.</p>
+
+				<p>First, I wrote a python script to pull internet speed data and write it to a database. Using Leaflet, Mapbox, and a geoJSON file of US counties, I assembled a map showing variable internet speeds around the country. Visitors can also search by county and compare internet speeds directly. 
+				</p>
+		
+				</details>
+			
+	</div>
+	<footer> </footer>		
 
 	
 
 </div>
 
+		<script src="js/script.js" type="text/javascript"></script>
 
 </body>
 </html>
