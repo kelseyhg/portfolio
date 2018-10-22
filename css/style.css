@@ -364,7 +364,7 @@ div {
 	}
 	/* NAME and HEADER css */
 	#profile-top {
-		width: 100vw;
+		width: 250vw;
 		height: 180vh;
 		border: 1px solid black;
 	}
@@ -380,12 +380,12 @@ div {
 	}
 
 	#letter-k {
-		grid-column: 1;
+		grid-column: 2;
 		grid-row: 3;
 		text-align: center;
-		margin-top: 7vw;
-		margin-left: 18vw;
-		width: 47vw;
+		margin-top: -1vw;
+		margin-left: 23vw;
+		width: 42vw;
 		opacity: 0;
 	  	animation: fade-in-left ease 1.5s forwards;
 	  	animation-delay: 0.8s;
@@ -395,9 +395,9 @@ div {
 		grid-column: 3;
 		grid-row: 5;
 		text-align: center;
-		margin-top: 9vw;
-		margin-left: -12vw;
-		width: 16vw;
+		margin-top: -12vw;
+		margin-left: 1vw;
+		width: 36vw;
 		opacity: 0;
 	  	animation: fade-in-left ease 1.5s forwards;
 	  	animation-delay: 0.8s;
