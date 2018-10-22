@@ -376,8 +376,6 @@ div {
 	}
 
 	/* NAME and HEADER css */
-
-
 	.nav {
 		display: block;
 		background-color: black;
@@ -406,6 +404,7 @@ div {
 		margin-top: -13.5vw;
 		margin-left: 7vw;
 		width: 24vw;
+
 		opacity: 0;
 	  	animation: fade-in-left ease 1.5s forwards;
 	  	animation-delay: 0.8s;
@@ -418,6 +417,7 @@ div {
 		margin-top: -11vw;
 		margin-left: -14vw;
 		width: 21vw;
+
 		opacity: 0;
 	  	animation: fade-in-left ease 1.5s forwards;
 	  	animation-delay: 0.8s;
