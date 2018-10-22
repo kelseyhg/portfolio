@@ -187,7 +187,6 @@ nav:hover {
 
 .name-header {
 	border-radius: 20px;
-	color: black;
 	font-size: 10.5vw;
 	grid-column: 2 / span 6;
 	grid-row: 2;
@@ -365,17 +364,23 @@ div {
 	margin-bottom: 100px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
+	body {
+		color: red;
+	}
 	/* NAME and HEADER css */
 	#profile-top {
-		width: 250vw;
+		width: 100vw;
 		height: 180vh;
+		border: 1px solid black;
+
 	}
 
 	.name-header {
 		border-radius: 20px;
 		color: black;
-		font-size: 48vw;
+		font-size: 40vw;
+
 		grid-column: 2 / span 6;
 		grid-row: 2;
 		text-align: center;
@@ -387,7 +392,9 @@ div {
 		grid-row: 3;
 		text-align: center;
 		margin-top: 7vw;
-		margin-left: 43vw;
+
+		margin-left: 18vw;
+
 		width: 47vw;
 		opacity: 0;
 	  	animation: fade-in-left ease 1.5s forwards;
@@ -400,7 +407,7 @@ div {
 		text-align: center;
 		margin-top: 9vw;
 		margin-left: -12vw;
-		width: 41vw;
+		width: 16vw;
 		opacity: 0;
 	  	animation: fade-in-left ease 1.5s forwards;
 	  	animation-delay: 0.8s;
