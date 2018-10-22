@@ -1,7 +1,12 @@
+
 /*font-family: 'Raleway', sans-serif;
 font-family: 'Sawarabi Mincho', sans-serif; */
 
 body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	position: absolute;
 	background-color: white;
 	font-family: 'Sawarabi Mincho', sans-serif;
 }
@@ -63,6 +68,7 @@ footer {
 	text-align: right;
 	grid-column: 3;
 	grid-row: 2;
+	margin-right: 80px;
 }
 
 .project-1-pic {
@@ -77,7 +83,6 @@ footer {
 }
 
 .project-pic {
-
 	width: 300px;
 	box-shadow: 2px 2px 5px gray;
 }
@@ -98,6 +103,7 @@ footer {
 	grid-column: 3;
 	grid-row: 5;
 	padding-top: 50px;
+	margin-right: 80px;
 }
 
 .project-2-pic {
@@ -120,6 +126,7 @@ footer {
 	grid-column: 3;
 	grid-row: 8;
 	padding-top: 50px;
+	margin-right: 80px;
 }
 
 .project-3-pic {
@@ -141,6 +148,7 @@ footer {
 	grid-column: 3;
 	grid-row: 11;
 	padding-top: 50px;
+	margin-right: 80px;
 }
 
 .project-4-pic {
@@ -175,7 +183,7 @@ nav:hover {
 .nav {
 	display: inline-block;
 	padding: 13px;
-	margin-right: 100px;
+	margin-right: 10vw;
 
 }
 
@@ -266,17 +274,6 @@ i {
 	color: black;
 }
 
-.top-lattice {
-	margin: -10px;
-	width: 100vw;
-	z-index: -1;
-}
-
-
-#bio {
-    height:100vh;
-    width:50vw;
-}
 
 #wheel {
 	grid-column: 1;
@@ -364,36 +361,50 @@ div {
 	margin-bottom: 100px;
 }
 
-@media only screen and (max-width: 500px) {
-	body {
-		color: red;
-	}
-	/* NAME and HEADER css */
-	#profile-top {
-		width: 250vw;
-		height: 180vh;
-		border: 1px solid black;
+/* MOBILE RESPONSIVE SETTINGS */
 
+@media only screen and (max-width: 500px) {
+	html, body {
+  		overflow-x:hidden 
+	} 
+
+	body {
+		position: absolute;
+		width: 100vw;
+		color: red;
+		word-break: break-word;
+	}
+
+	/* NAME and HEADER css */
+	.nav {
+		display: block;
+		background-color: black;
+		width: 100vw;
+	}
+
+	#profile-top {
+		grid-template-rows: 50px repeat(5, 150px);
+		height: 160vh;
 	}
 
 	.name-header {
-		border-radius: 20px;
 		color: black;
-		font-size: 40vw;
-
-		grid-column: 2 / span 6;
-		grid-row: 2;
+		font-size: 25vw;
+		width: 100vw;
+		grid-column: 1 / span 5;
+		grid-row: 3;
 		text-align: center;
 		z-index: -3;
 	}
 
 	#letter-k {
-		grid-column: 2;
-		grid-row: 3;
+		grid-column: 1;
+		grid-row: 4;
 		text-align: center;
-		margin-top: -1vw;
-		margin-left: 23vw;
-		width: 42vw;
+		margin-top: -13.5vw;
+		margin-left: 7vw;
+		width: 24vw;
+
 		opacity: 0;
 	  	animation: fade-in-left ease 1.5s forwards;
 	  	animation-delay: 0.8s;
@@ -403,9 +414,10 @@ div {
 		grid-column: 3;
 		grid-row: 5;
 		text-align: center;
-		margin-top: -12vw;
-		margin-left: 1vw;
-		width: 36vw;
+		margin-top: -11vw;
+		margin-left: -14vw;
+		width: 21vw;
+
 		opacity: 0;
 	  	animation: fade-in-left ease 1.5s forwards;
 	  	animation-delay: 0.8s;
@@ -413,55 +425,119 @@ div {
 
 	#tagline {
 		grid-row: 6;
-		font-size: 7vw;
-		grid-column: 3 / span 4;
-		margin-top: 30%;
+		font-size: 5vw;
+		grid-column: 3 / span 5;
+		margin-top: 10%;
 		margin-left: -20px;
 		text-align: center;
 	}
 
 	.contact-info {
 		margin-top: 30vh;
-		grid-row: 7;
-		display: grid;
+		display: block;
 		align-items: center;
 		text-align: center;
-		grid-template-rows: 100px;
-		grid-template-columns: 1fr 100px 200px 150px 120px 1fr;
 		background-color: #dce8dc;
-		width: 250vw;
-		height: 25vh;
+		width: 103vw;
+	}
+
+	.contact-info p:first-child {
+		margin-top: -10vh;
 	}
 
 	/* ABOUT ME css */
     #profile-center {
-    	margin: 0 10vw 0 10vw;
+    	margin-top: 20vw;
        	width: 100vw;
        	display: inline-block;
     }
     .column-1 {
-    	width: 200vw;
+    	width: 90vw;
     	display: block;
-    	font-size: 36px;
+    	font-size: 24px;
+    	margin: 0 auto;
     
 	}
 	.column-2 {
-		width: 200vw;
+		width: 90vw;
 		display: block;
-		font-size: 36px;
-		margin-top: -100px;
+		font-size: 24px;
+		margin: 0 auto;
+		margin-top: -40px;
 		
 	}
 	#wheel {
-		width: 100vw;
-		margin-bottom: -90vw;
+		width: 50vw;
+		margin-bottom: -51vw;
+		margin-left: 25vw;
 		
 	}
 	#profile {
-		width: 100vw;
+		width: 50vw;
 		z-index: -1;
+		margin-left: 25vw;
 	}
 	div {
 	margin-bottom: 10px;
+	}
+
+	/* PROJECTS CSS */
+	#projects {
+		margin: 0 auto;
+		margin-top: 30vh;
+		display: block;
+	}
+
+	#projects h3 {
+		font-size: 24px;
+	}
+
+	#projects h2 {
+		font-size: 32px;
+	}
+
+	.p-links-2, .p-links-3, .p-links-4 {
+		margin-top: -7vh;
+		text-align: left;
+	}
+	.p-links-1 {
+		margin-top: 0px;
+		text-align: left;
+	}
+
+	.tools {
+		margin-top: 7vh;
+		font-size: 5vw;
+	}
+
+	details {
+		margin-top: -10vh;
+	}
+
+	details p {
+		font-size: 18px;
+	}
+
+	.summary-1 {
+		margin-top: 21vh;
+	}
+
+	.summary-2 {
+		margin-top: 23vh;
+	}
+
+	.summary-3 {
+		margin-top: 16vh;
+	}
+
+	.summary-4 {
+		margin-top: 11vh;
+	}
+
+	.project-pic {
+		width: 80vw;
+	}
+
+
 }
 }
