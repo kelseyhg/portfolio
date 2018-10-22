@@ -158,7 +158,7 @@ header {
 	background-color: black;
 	grid-row: 1;
 	grid-column: 1 / span 8;
-	text-align: center
+	text-align: center;
 }
 
 a {
@@ -178,6 +178,12 @@ nav:hover {
 	margin-right: 100px;
 
 }
+
+
+.summary-1 {
+	margin-top: 50px;
+}
+
 
 .name-header {
 	border-radius: 20px;
@@ -367,12 +373,14 @@ div {
 		width: 250vw;
 		height: 180vh;
 		border: 1px solid black;
+
 	}
 
 	.name-header {
 		border-radius: 20px;
 		color: black;
 		font-size: 40vw;
+
 		grid-column: 2 / span 6;
 		grid-row: 2;
 		text-align: center;
