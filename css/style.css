@@ -371,7 +371,6 @@ div {
 	body {
 		position: absolute;
 		width: 100vw;
-		color: red;
 		word-break: break-word;
 	}
 
@@ -496,6 +495,11 @@ div {
 		font-size: 32px;
 	}
 
+	#project-1-title, #project-2-title, #project-3-title, #project-4-title  {
+		padding-top: 50px;
+		margin-bottom: 0px;
+	}
+
 	.p-links-2, .p-links-3, .p-links-4 {
 		margin-top: -7vh;
 		text-align: left;
@@ -509,6 +513,9 @@ div {
 		margin-top: 7vh;
 		font-size: 5vw;
 	}
+	.project-1-text{
+		max-height: 850px;
+	}
 
 	details {
 		margin-top: -10vh;
@@ -519,7 +526,7 @@ div {
 	}
 
 	.summary-1 {
-		margin-top: 21vh;
+		margin-top: 51vh;
 	}
 
 	.summary-2 {
