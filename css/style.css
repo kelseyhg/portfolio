@@ -445,6 +445,7 @@ div {
 
 	#contact-info {
 		margin-top: 3vh;
+		padding-bottom: 3vh;
 		display: block;
 		align-items: center;
 		text-align: center;
@@ -462,7 +463,7 @@ div {
     	margin-top: 12vh;
        	width: 100vw;
        	display: inline-block;
-       	padding-bottom: 5vh
+       	padding-bottom: 5vh;
     }
     .column-1 {
     	width: 90vw;
