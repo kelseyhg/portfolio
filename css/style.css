@@ -11,6 +11,35 @@ body {
 	font-family: 'Sawarabi Mincho', sans-serif;
 }
 
+.accordion {
+    background-color: #dce8dc;
+    color: #444;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 18px;
+    width: 80vw;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+	width: 80vw;
+	margin-left: -3.5vw;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
 #profile-top {
 	margin-top: -10px;
 	margin-left: -10px;
@@ -32,7 +61,7 @@ body {
 	width: 80vw;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: 330px 330px 330px ;
+	grid-template-columns: repeat(3, 1fr) ;
 	grid-template-rows: 40px repeat(minmax(min-content, max-content));
 }
 
@@ -68,97 +97,94 @@ footer {
 	text-align: right;
 	grid-column: 3;
 	grid-row: 2;
-	margin-right: 80px;
 }
 
 .project-1-pic {
 	grid-column: 1 / span 3;
 	grid-row: 3;
-
+	margin-bottom: 10px;
 }
 
 .project-1-text {
 	grid-column: 1 /span 3;
 	grid-row: 4;
+	margin-bottom: -13vh;
 }
 
 .project-pic {
-	width: 300px;
-	box-shadow: 2px 2px 5px gray;
+	width: 33%;
+	box-shadow: 2px 2px 5px #cfd6cf;
 }
-
-.project-pic:hover {
-	width: 305px;
-	box-shadow: 2px 2px 5px black;
-}
-
 
 #project-2-title {
 	grid-row: 5;
 	grid-column: 1 / span 5;
-	padding-top: 50px;
+	padding-top: 100px;
 }
 .p-links-2 {
 	text-align: right;
 	grid-column: 3;
 	grid-row: 5;
-	padding-top: 50px;
-	margin-right: 80px;
+	padding-top: 100px;
 }
 
 .project-2-pic {
 	grid-column: 1 / span 3;
 	grid-row: 6;
+	margin-bottom: 10px;
 }
 
 .project-2-text {
 	grid-column: 1 /span 3;
 	grid-row: 7;
+	margin-bottom: -13vh;
 }
 
 #project-3-title {
 	grid-row: 8;
 	grid-column: 1 / span 5;
-	padding-top: 50px;
+	padding-top: 100px;
 }
 .p-links-3 {
 	text-align: right;
 	grid-column: 3;
 	grid-row: 8;
-	padding-top: 50px;
-	margin-right: 80px;
+	padding-top: 100px;
 }
 
 .project-3-pic {
 	grid-column: 1 / span 3;
 	grid-row: 9;
+	margin-bottom: 10px;
 }
 
 .project-3-text {
 	grid-column: 1 /span 3;
 	grid-row: 10;
+	margin-bottom: -13vh;
 }
 #project-4-title {
 	grid-row: 11;
 	grid-column: 1 / span 5;
-	padding-top: 50px;
+	padding-top: 100px;
 }
 .p-links-4 {
 	text-align: right;
 	grid-column: 3;
 	grid-row: 11;
-	padding-top: 50px;
-	margin-right: 80px;
+	padding-top: 100px;
 }
 
 .project-4-pic {
 	grid-column: 1 / span 3;
 	grid-row: 12;
+	margin-bottom: 10px;
 }
 
 .project-4-text {
 	grid-column: 1 /span 3;
 	grid-row: 13;
+	margin-bottom: -13vh;
 }
 
 header {
@@ -182,14 +208,19 @@ nav:hover {
 
 .nav {
 	display: inline-block;
-	padding: 13px;
+	padding: 13px ;
+	margin-top: 7px;
 	margin-right: 10vw;
-
 }
 
+#mobile-name, #mobile-floral {
+	display: none
+}
 
 .summary-1 {
-	margin-top: 50px;
+	margin-top: 8vh;
+	font-weight: bold;
+	font-size: 18px;
 }
 
 
@@ -326,7 +357,7 @@ i {
 	height: 80vh;
 }
 
-.contact-info {
+#contact-info {
 	grid-row: 6;
 	display: grid;
 	align-items: center;
@@ -342,18 +373,8 @@ p {
 	font-family: 'Raleway', sans-serif;
 	position: relative;
 	top: 40%;
-	transform: translateY(-50%);
 	margin-left: 25px;
 	margin-right: 10px;
-}
-
-
-.show-box {
-	background-color: #dce8dc;
-	height: 300px;
-	width: 500px;
-	margin: 20px;
-
 }
 
 
@@ -375,78 +396,70 @@ div {
 	}
 
 	/* NAME and HEADER css */
+
+	#mobile-name, #mobile-floral {
+		display: block;
+		width: 80vw;
+		grid-column: 2 / span 5;
+		grid-row: 3;
+		margin-top: 10vh;
+	}
+	#mobile-floral {
+		opacity: 0;
+	  	animation: fade-in-left ease 1.5s forwards;
+	  	animation-delay: 0.8s;
+	  }
+
 	.nav {
 		display: block;
 		background-color: black;
 		width: 100vw;
+		margin: 0;
 	}
 
 	#profile-top {
 		grid-template-rows: 50px repeat(5, 150px);
-		height: 160vh;
+		height: 140vh;
 	}
 
 	.name-header {
-		color: black;
-		font-size: 25vw;
-		width: 100vw;
-		grid-column: 1 / span 5;
-		grid-row: 3;
-		text-align: center;
-		z-index: -3;
+		display: none;
 	}
 
 	#letter-k {
-		grid-column: 1;
-		grid-row: 4;
-		text-align: center;
-		margin-top: -13.5vw;
-		margin-left: 7vw;
-		width: 24vw;
-
-		opacity: 0;
-	  	animation: fade-in-left ease 1.5s forwards;
-	  	animation-delay: 0.8s;
+		display: none;
 	}
 
 	#letter-g {
-		grid-column: 3;
-		grid-row: 5;
-		text-align: center;
-		margin-top: -11vw;
-		margin-left: -14vw;
-		width: 21vw;
-
-		opacity: 0;
-	  	animation: fade-in-left ease 1.5s forwards;
-	  	animation-delay: 0.8s;
+		display: none;
 	}
 
 	#tagline {
-		grid-row: 6;
+		grid-row: 5;
 		font-size: 5vw;
 		grid-column: 3 / span 5;
-		margin-top: 10%;
+		margin-top: 10vh;
 		margin-left: -20px;
 		text-align: center;
 	}
 
-	.contact-info {
-		margin-top: 30vh;
+	#contact-info {
+		margin-top: 3vh;
 		display: block;
 		align-items: center;
 		text-align: center;
 		background-color: #dce8dc;
 		width: 103vw;
+		height: 44vh;
 	}
 
-	.contact-info p:first-child {
+	#contact-info p:first-child {
 		margin-top: -10vh;
 	}
 
 	/* ABOUT ME css */
     #profile-center {
-    	margin-top: 20vw;
+    	margin-top: 2vw;
        	width: 100vw;
        	display: inline-block;
     }
@@ -493,10 +506,11 @@ div {
 
 	#projects h2 {
 		font-size: 32px;
+		margin-bottom: -15vh; 
 	}
 
 	#project-1-title, #project-2-title, #project-3-title, #project-4-title  {
-		padding-top: 50px;
+		padding-top: 15vh;
 		margin-bottom: 0px;
 	}
 
@@ -509,36 +523,19 @@ div {
 		text-align: left;
 	}
 
-	.tools {
-		margin-top: 7vh;
-		font-size: 5vw;
-	}
 	.project-1-text{
-		max-height: 850px;
-	}
-
-	details {
-		margin-top: -10vh;
-	}
-
-	details p {
-		font-size: 18px;
+		max-height: 1250px;
 	}
 
 	.summary-1 {
-		margin-top: 51vh;
+		margin-bottom: 2vh;
+		font-size: 22px;
+		max-height: 1300px;
 	}
 
-	.summary-2 {
-		margin-top: 23vh;
-	}
-
-	.summary-3 {
-		margin-top: 16vh;
-	}
-
-	.summary-4 {
-		margin-top: 11vh;
+	.panel {
+		margin-top: 3vh;
+		font-size: 18px;
 	}
 
 	.project-pic {
@@ -548,3 +545,4 @@ div {
 
 }
 }
+

@@ -13,20 +13,22 @@
 <body>
 	<div id="profile-top">
 		<header>
-			<a class="nav" href="#">About Me</a>
-			<a class="nav" href="#">Contact</a>
-			<a class="nav" href="#">Resume</a>
-			<a class="nav" href="#">Work</a>
+			<a class="nav" href="#profile-center">About Me</a>
+			<a class="nav" href="#contact-info">Contact</a>
+			<a class="nav" href="Kelsey-Green-resume.pdf" target="_blank"">Resume</a>
+			<a class="nav" href="#projects">Work</a>
 		</header>
 		<!--<img class="top-lattice" src="portfolio-top-small.png"> -->
 		<img id="letter-k" src="img/big-K.png">
 		<img id="letter-g" src="img/big-G.png">
+		<img id="mobile-name" src="img/mobile-name.png">
+		<img id="mobile-floral" src="img/mobile-floral.png">
 		<h1 class="name-header">
 			Kelsey Green
 		</h1>
 		<h3 id="tagline"> Web Development, Digital Humanities, Design</h3>	
 	
-		<div class="contact-info">
+		<div id="contact-info">
 			<p id=placeholder> </p>
 			<p><a href="https://github.com/kelseyhg" target="_blank"><img src="img/github-icon.svg" width="25"><br><span class="contact-link"> github </span></a></p>
 			<p><i class="material-icons">mail</i> <br>kelseyhgreen@gmail.com </p>
@@ -41,15 +43,19 @@
 
 		 <div class="column-1">
 		 	<br> <br>
-			 I'm a web developer with a digital humanities focus. I develop sites that are beautiful, intuitive, and useful. <br><br>
-				
-			From archaeological digs in the Mediterranean to dusty museum archives to college computer labs, I've seen how technology can provide indispensable tools for education, research, and communication. 
+		 	Hi, I'm Kelsey! I'm a web developer with a digital humanities focus. It's my goal to build sites that are beautiful, intuitive, and useful.<br><br>
+
+			As an undergraduate, I studied anthropology. From archaeological digs in the Mediterranean to dusty museum archives to college computer labs, I saw how technology can provide indispensable tools for education, research, and communication—and how often those tools are underutilized and under-taught.
+
 		</div>
 		<div class="column-2">
 			<br> <br>
-			As an undergraduate studying anthropology, it quickly became clear that the barrier that persisted between computer science and more "traditional" pathways of study like the humanities and social sciences was unproductive and ultimately harmful. <br><br>
+			I went on to get a master's degree in digital humanities because I wanted to learn more about integrating digital technologies with more "traditional" areas of academics.<br> <br>
 
-			I believe that technology is more a tool than an area of study, and we all benefit when people of diverse backgrounds and interests learn to build with code.
+			I learned a lot about theory, but not enough to develop tools of my own. After finishing the program, I enrolled in a coding bootcamp to develop my technical skills. <br><br>
+
+			I'm constantly working to expand my knowledge base, especially at the intersections of material culture and digital technology. 
+
 		</div>
 	</div>
 	<div id="projects">
@@ -60,30 +66,33 @@
 					<img class="project-pic" src="img/museum-game-1.png">
 					<img class="project-pic" src="img/museum-game-2.png">
 					<img class="project-pic" src="img/museum-game-3.png">
-					<p class="tools">Tools: HTML/CSS | JavaScript | jQuery | jQueryUI | Bootstrap | Adobe Photoshop</p><br>
+					<br>
 				</div>
-				<br>
-				<details class="project-1-text">
-				<summary> More about Break-In!</summary>
-				 <p class="summary-1">As a part of my digital humanities program, I evaluated digital representations of museum displays and artifacts. Much like Benjamin writes in his seminal "Art in the Age of Mechanical Reproduction", artifacts and museum spaces lose the aura that makes them striking and special when digitally reproduced. It can be difficult to remain engaged with a museum collection that is not thoughtfully interpreted in digital space. <br><br>
-				This little game, built with pure css and javascript, is one response to the question: how can we engage and educate remote "visitors" to a museum collection? <br><br>
-				Each artifact in the game is based on a real item in the British Museum's collection and was illustrated for the game.<br><br>
-				Players move through three different museum rooms to collect artifacts, artifact labels, and a note. Then, players reassemble a broken artifact and return the artifacts and their labels to their proper places in the display. Finally, they use what they've learned to uncover the final, missing artifact. </p>
-				</details>
+				<div class="project-1-text">
+					<button class="accordion">More about Break-In!</button>
+					<div class="panel">
+					<p class="summary-1">Tools: HTML/CSS | JavaScript | jQuery | jQueryUI | Bootstrap | Adobe Photoshop</p><br>
+	  				 <p>As a part of my digital humanities program, I evaluated digital representations of museum displays and artifacts. Much like Benjamin writes in his seminal "Art in the Age of Mechanical Reproduction", artifacts and museum spaces lose the aura that makes them striking and special when digitally reproduced. It can be difficult to remain engaged with a museum collection that is not thoughtfully interpreted in digital space.</p><p>This little game, built with CSS and JavaScript, is one response to the question: how can we engage and educate remote "visitors" to a museum collection? 
+					For this game, I focused on real artifacts in the British Museum's collection, illustrating each item based on their images in the museum's online database.</p>
+					<p>Players move through three different museum rooms to collect artifacts, artifact labels, and a note. Then, players reassemble a broken artifact and return the artifacts and their labels to their proper places in the display. Finally, they use what they've learned to uncover the final, missing artifact. </p>
+					</div>
+				</div>
 		
 			
 				<h3 id="project-2-title"> Auctave Live-Auction Management </h3><h3 class="p-links-2"><a href="https://auctave-app.herokuapp.com" target="_blank"><i class="material-icons">launch</i> </a> <a href="https://github.com/kelseyhg/auctive" target="_blank"><img src="img/github-icon.svg" width="25"></a> </h3>
 				<div class="project-2-pic">
 					<img class="project-pic" src="img/auctave-1.png" id="myImg">
-					<img class="project-pic" src="img/auctave-2.png" onclick="openModal();currentSlide(2)">
-					<img class="project-pic" src="img/auctave-3.png" onclick="openModal();currentSlide(3)">
-					<p class="tools">Tools:  HTML/CSS | JavaScript | Ajax | Express | NodeJS | Postgresql | Bootstrap | Google Sheets API</p><br>
+					<img class="project-pic" src="img/auctave-2.png">
+					<img class="project-pic" src="img/auctave-3.png">
 				</div>
-				<details class="project-2-text">
-				<summary> More about Auctave</summary>
-				 <p class="summary-2"> For years, West Seattle Symphony Orchestras have been fundraising with a gala auction. It's an event that requires a lot of dedicated work from volunteers: soliciting donations from individuals and businesses, selling tickets, keeping track of sold items and other donations, and creating reports. Although there is software available to make this process easier, the Orchestras are run largely by volunteers on a shoestring budget and there has never been room in the budget.</p>
-				<p>Auctave was built to meet West Seattle Symphony Orchestras' specific needs. It's a simple, usable app that tracks donors, item donations, and event attendees. Data is stored in a SQL database, and after the event, reports can be written to a Google spreadsheet for easy analysis, email merges, and review.</p>
-				</details>
+				<div class="project-2-text">
+					<button class="accordion">More about Auctave</button>
+					<div class="panel">
+					<p class="summary-1">Tools: HTML/CSS | JavaScript | Ajax | Express | NodeJS | Postgresql | Bootstrap | Google Sheets API</p><br>
+					 <p> For years, West Seattle Symphony Orchestras have been fundraising with a gala auction. It's an event that requires a lot of dedicated work from volunteers: soliciting donations from individuals and businesses, selling tickets, keeping track of sold items and other donations, and creating reports. Although there is software available to make this process easier, the Orchestras are run largely by volunteers on a shoestring budget and there has never been room in the budget.</p>
+					<p>Auctave was built to meet West Seattle Symphony Orchestras' specific needs. It's a simple, usable app that tracks donors, item donations, and event attendees. Data is stored in a SQL database, and after the event, reports can be written to a Google spreadsheet for easy analysis, email merges, and review.</p>
+					</div>
+				</div>
   
 
 			
@@ -92,14 +101,15 @@
 					<img class="project-pic" src="img/ginkgo-1.png">
 					<img class="project-pic" src="img/ginkgo-2.png">
 					<img class="project-pic" src="img/Ginkgo-3.png">
-					<p class="tools">Tools: HTML/CSS | JavaScript | React | MongoDB | Express | NodeJS | React-Vis | Moments</p><br>
 				</div>
-				<details class="project-3-text">
-				<summary> More about Ginkgo</summary><br><br>
-				 <p class="summary-3"> Many people struggle to keep track of their spending and stick to a budget. Ginkgo was a group effort to design a site that makes money tracking simple and easy to visualize. Users can sign in, set up a monthly budget goal, and record expenditures of different categories. Cool graphs from React-Vis display donut charts for budget and total spending, and a bar chart to compare goals with actual spending.</p>
-		
-				</details>
-			
+				<div class="project-3-text">
+					<button class="accordion">More about Ginkgo</button>
+					<div class="panel">
+						<p class="summary-1">Tools: HTML/CSS | JavaScript | React | MongoDB | Express | NodeJS | React-Vis | Moments</p><br>
+					 	<p> Many people struggle to keep track of their spending and stick to a budget. Ginkgo was a group effort to design a site that makes money tracking simple and easy to visualize. Users can sign in, set up a monthly budget goal, and record expenditures of different categories. Cool graphs from React-Vis display donut charts for budget and total spending, and a bar chart to compare goals with actual spending.</p>
+					</div>
+				</div>
+				
 
 			
 				<h3 id="project-4-title"> Who Gets the Internet? </h3><h3 class="p-links-4"><a href="https://broadband-speed.herokuapp.com" target="_blank"><i class="material-icons">launch</i> </a> <a href="https://github.com/kelseyhg/broadbandspeed" target="_blank"><img src="img/github-icon.svg" width="25"></a> </h3>
@@ -107,17 +117,20 @@
 					<img class="project-pic" src="img/broadband-1.png">
 					<img class="project-pic" src="img/broadband-2.png">
 					<img class="project-pic" src="img/broadband-3.png">
-					<p class="tools"> Tools: HTML/CSS | JavaScript | Postgresql | Python | Django | Leaflet Maps | geoJSON </p><br>
 				</div>
-				<details class="project-4-text">
-				<summary> More about... the Internet</summary><br><br>
-				 <p class="summary-4"> As a web developer, I spend a lot of my time online. I don't think a lot about my ability to access the internet until my connection goes down. But for some parts of the US, internet access is inaccessible or too slow to access much of today's web content. Rural areas are especially hard-hit.</p>
-				<p>In the spirit of the Rural Electrification Administration, which in the 1930's produced a series of <a class="in-text" href="http://www.designishistory.com/1940/lester-beall/" target="_blank">iconic posters</a> illustrating the potential of electricity, I wanted to create a website that recreated the experience of lagging internet while informing about internet access.</p>
+				<div class="project-4-text">
+					<button class="accordion">More about... the Internet</button>
+					<div class="panel">
+						<p class="summary-1"> Tools: HTML/CSS | JavaScript | Postgresql | Python | Django | Leaflet Maps | geoJSON </p><br>
+					 	 <p> As a web developer, I spend a lot of my time online. I don't think a lot about my ability to access the internet until my connection goes down. But for some parts of the US, internet access is inaccessible or too slow to access much of today's web content. Rural areas are especially hard-hit.</p>
+						<p>In the spirit of the Rural Electrification Administration, which in the 1930's produced a series of <a class="in-text" href="http://www.designishistory.com/1940/lester-beall/" target="_blank">iconic posters</a> illustrating the potential of electricity, I wanted to create a website that recreated the experience of lagging internet while informing about internet access.</p>
 
-				<p>First, I wrote a python script to pull internet speed data and write it to a database. Using Leaflet, Mapbox, and a geoJSON file of US counties, I assembled a map showing variable internet speeds around the country. Visitors can also search by county and compare internet speeds directly. 
-				</p>
-		
-				</details>
+						<p>First, I wrote a python script to pull internet speed data and write it to a database. Using Leaflet, Mapbox, and a geoJSON file of US counties, I assembled a map showing variable internet speeds around the country. Visitors can also search by county and compare internet speeds directly. 
+						</p>
+					</div>
+				</div>
+				<br><br>
+				
 			
 	</div>
 	<footer> </footer>		
@@ -127,6 +140,24 @@
 </div>
 
 		<script src="js/script.js" type="text/javascript"></script>
+		<script>var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}</script>
 
 </body>
 </html>
