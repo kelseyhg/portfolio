@@ -459,9 +459,10 @@ div {
 
 	/* ABOUT ME css */
     #profile-center {
-    	margin-top: 2vw;
+    	margin-top: 12vh;
        	width: 100vw;
        	display: inline-block;
+       	padding-bottom: 5vh
     }
     .column-1 {
     	width: 90vw;
