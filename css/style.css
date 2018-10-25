@@ -419,6 +419,7 @@ div {
 		position: absolute;
 		width: 100vw;
 		word-break: break-word;
+		background-color: white;
 	}
 
 	/* NAME and HEADER css */
@@ -475,14 +476,17 @@ div {
 		display: block;
 		align-items: center;
 		text-align: center;
-		background-color: red;
 		width: 103vw;
 		height: 44vh;
 		color: #f2f5f9;
 	}
 
+	#contact-info p {
+		margin-bottom: 2vh;
+	}
+
 	#contact-info p:first-child {
-		margin-top: -12vh;
+		margin-top: -10vh;
 	}
 
 	/* ABOUT ME css */
@@ -563,8 +567,8 @@ div {
 	}
 
 	.panel {
-		margin-top: 3vh;
 		font-size: 18px;
+		width: 80vw;
 	}
 
 	.project-pic {
