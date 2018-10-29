@@ -79,7 +79,7 @@
 					<br>
 				</div>
 				<div class="project-1-text">
-					<button class="accordion">More about Break-In!</button>
+					<button class="accordion">More about Break-In! <i class="material-icons"> arrow_drop_down_circle</i></button>
 					<div class="panel">
 					<p class="summary-1">Tools: HTML/CSS | JavaScript | jQuery | jQueryUI | Bootstrap | Adobe Photoshop</p><br>
 	  				 <p>As a part of my digital humanities program, I evaluated digital representations of museum displays and artifacts. Much like Benjamin writes in his seminal "Art in the Age of Mechanical Reproduction", artifacts and museum spaces lose the aura that makes them striking and special when digitally reproduced. It can be difficult to remain engaged with a museum collection that is not thoughtfully interpreted in digital space.</p><p>This little game, built with CSS and JavaScript, is one response to the question: how can we engage and educate remote "visitors" to a museum collection? 
@@ -96,7 +96,7 @@
 					<img class="project-pic" src="img/auctave-3.png">
 				</div>
 				<div class="project-2-text">
-					<button class="accordion">More about Auctave</button>
+					<button class="accordion">More about Auctave <i class="material-icons"> arrow_drop_down_circle</i></button>
 					<div class="panel">
 					<p class="summary-1">Tools: HTML/CSS | JavaScript | Ajax | Express | NodeJS | Postgresql | Bootstrap | Google Sheets API</p><br>
 					 <p> For years, West Seattle Symphony Orchestras have been fundraising with a gala auction. It's an event that requires a lot of dedicated work from volunteers: soliciting donations from individuals and businesses, selling tickets, keeping track of sold items and other donations, and creating reports. Although there is software available to make this process easier, the Orchestras are run largely by volunteers on a shoestring budget and there has never been room in the budget.</p>
@@ -113,7 +113,7 @@
 					<img class="project-pic" src="img/Ginkgo-3.png">
 				</div>
 				<div class="project-3-text">
-					<button class="accordion">More about Ginkgo</button>
+					<button class="accordion">More about Ginkgo <i class="material-icons"> arrow_drop_down_circle</i></button>
 					<div class="panel">
 						<p class="summary-1">Tools: HTML/CSS | JavaScript | React | MongoDB | Express | NodeJS | React-Vis | Moments</p><br>
 					 	<p> Many people struggle to keep track of their spending and stick to a budget. Ginkgo was a group effort to design a site that makes money tracking simple and easy to visualize. Users can sign in, set up a monthly budget goal, and record expenditures of different categories. Cool graphs from React-Vis display donut charts for budget and total spending, and a bar chart to compare goals with actual spending.</p>
@@ -129,7 +129,7 @@
 					<img class="project-pic" src="img/broadband-3.png">
 				</div>
 				<div class="project-4-text">
-					<button class="accordion">More about... the Internet</button>
+					<button class="accordion">More about... the Internet <i class="material-icons"> arrow_drop_down_circle</i></button>
 					<div class="panel">
 						<p class="summary-1"> Tools: HTML/CSS | JavaScript | Postgresql | Python | Django | Leaflet Maps | geoJSON </p><br>
 					 	 <p> As a web developer, I spend a lot of my time online. I don't think a lot about my ability to access the internet until my connection goes down. But for some parts of the US, internet access is inaccessible or too slow to access much of today's web content. Rural areas are especially hard-hit.</p>
@@ -160,12 +160,22 @@ for (i = 0; i < acc.length; i++) {
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
+      var targetClicked = event.target;
+      let my_icon = targetClicked.children[0];
+      my_icon.innerHTML = "arrow_drop_down_circle";
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+    	var targetClicked = event.target;
+    	let my_icon = targetClicked.children[0];
+    	my_icon.innerHTML = "arrow_drop_up";
+    	panel.style.maxHeight = panel.scrollHeight + "px";
+
     } 
   });
 }
 </script>
+
+<!-- arrow_drop_up -->
+
 
 </body>
 </html>

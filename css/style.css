@@ -198,6 +198,11 @@ svg {
 	font-size: 18px;
 }
 
+button .material-icons {
+	font-size: 28px;
+	float: right;
+}
+
 /* PROJECT 1 grid alignment and style */
 
 #project-1-title {
@@ -482,7 +487,7 @@ div {
 	}
 
 	#contact-info p {
-		margin-bottom: 2vh;
+		margin-bottom: 4vh;
 	}
 
 	#contact-info p:first-child {
