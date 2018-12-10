@@ -312,6 +312,32 @@ h3 i {
 	margin-bottom: -13vh;
 }
 
+/* PROJECT 5 grid alignment and style */
+
+#project-5-title {
+	grid-row: 14;
+	grid-column: 1 / span 5;
+	padding-top: 100px;
+}
+.p-links-5 {
+	text-align: right;
+	grid-column: 3;
+	grid-row: 14;
+	padding-top: 100px;
+}
+
+.project-5-pic {
+	grid-column: 1 / span 3;
+	grid-row: 15;
+	margin-bottom: 10px;
+}
+
+.project-5-text {
+	grid-column: 1 /span 3;
+	grid-row: 16;
+	margin-bottom: -13vh;
+}
+
 footer {
 	width: 100vw;
 	height: 60px;
